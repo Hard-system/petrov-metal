@@ -691,3 +691,11 @@
         font-weight: 700 !important;
     }
 }
+
+@media (max-width: 576px) {
+    .carousel-caption .display-5 {
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+        word-wrap: break-word;
+    }
+}
