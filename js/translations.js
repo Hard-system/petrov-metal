@@ -102,7 +102,6 @@ const translations = {
 
         // Footer
         our_office: "Our Office",
-        quick_links: "Quick Links",
         about_us: "About Us",
         contact_us: "Contact Us",
         our_services: "Our Services",
@@ -225,7 +224,6 @@ const translations = {
 
         // Footer
         our_office: "Наш офис",
-        quick_links: "Быстрые ссылки",
         about_us: "О нас",
         contact_us: "Связаться с нами",
         our_services: "Наши услуги",
@@ -348,7 +346,6 @@ const translations = {
 
         // Footer
         our_office: "Нашият офис",
-        quick_links: "Бързи връзки",
         about_us: "За нас",
         contact_us: "Свържете се с нас",
         our_services: "Нашите услуги",
