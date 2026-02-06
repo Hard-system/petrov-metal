@@ -9,7 +9,7 @@ const translations = {
         // Topbar
         address: "Pliska Street, Pomorie, Bulgaria",
         email: "info@petrovmetal.com",
-        phone: "+359 888 123 456",
+        phone: "+359 898 796 060",
 
         // Contact Page
         contact_title: "Contact Us",
@@ -132,7 +132,7 @@ const translations = {
         // Topbar
         address: "ул. Плиска, Поморие, Болгария",
         email: "info@petrovmetal.com",
-        phone: "+359 888 123 456",
+        phone: "+359 898 796 060",
 
         // Contact Page
         contact_title: "Свяжитесь с нами",
@@ -255,7 +255,7 @@ const translations = {
         // Topbar
         address: "ул. Плиска, Поморие, България",
         email: "info@petrovmetal.com",
-        phone: "+359 888 123 456",
+        phone: "+359 898 796 060",
 
         // Contact Page
         contact_title: "Свържете се с нас",

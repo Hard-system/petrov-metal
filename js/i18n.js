@@ -5,7 +5,7 @@
     'use strict';
 
     // Default language
-    const DEFAULT_LANG = 'en';
+    const DEFAULT_LANG = 'bg';
     const STORAGE_KEY = 'petrov_metal_lang';
     const SUPPORTED_LANGS = ['en', 'ru', 'bg'];
 
