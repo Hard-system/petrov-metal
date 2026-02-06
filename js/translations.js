@@ -7,9 +7,15 @@ const translations = {
         brand: "PETROV METAL",
 
         // Topbar
-        address: "123 Street, New York, USA",
-        email: "info@example.com",
-        phone: "+012 345 67890",
+        address: "Pliska Street, Pomorie, Bulgaria",
+        email: "info@petrovmetal.com",
+        phone: "+359 888 123 456",
+        
+        // Contact Page
+        contact_title: "Contact Us",
+        contact_text: "Have any questions? Feel free to reach out to us via phone or email.",
+        email_us: "Email Us",
+        call_us: "Call Us",
 
         // Navigation
         nav_home: "Home",
@@ -124,9 +130,15 @@ const translations = {
         brand: "ПЕТРОВ МЕТАЛ",
 
         // Topbar
-        address: "123 Улица, Нью-Йорк, США",
-        email: "info@example.com",
-        phone: "+012 345 67890",
+        address: "ул. Плиска, Поморие, Болгария",
+        email: "info@petrovmetal.com",
+        phone: "+359 888 123 456",
+        
+        // Contact Page
+        contact_title: "Свяжитесь с нами",
+        contact_text: "Есть вопросы? Свяжитесь с нами по телефону или электронной почте.",
+        email_us: "Напишите нам",
+        call_us: "Позвоните нам",
 
         // Navigation
         nav_home: "Главная",
@@ -241,9 +253,15 @@ const translations = {
         brand: "ПЕТРОВ МЕТАЛ",
 
         // Topbar
-        address: "123 Улица, Ню Йорк, САЩ",
-        email: "info@example.com",
-        phone: "+012 345 67890",
+        address: "ул. Плиска, Поморие, България",
+        email: "info@petrovmetal.com",
+        phone: "+359 888 123 456",
+        
+        // Contact Page
+        contact_title: "Свържете се с нас",
+        contact_text: "Имате въпроси? Свържете се с нас по телефон или имейл.",
+        email_us: "Пишете ни",
+        call_us: "Обадете ни се",
 
         // Navigation
         nav_home: "Начало",
