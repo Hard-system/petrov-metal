@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>WELDORK - Welding Website Template</title>
+    <title>PETROV METAL - Contact Us</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -46,12 +46,12 @@
         <div class="container py-3">
             <div class="d-flex align-items-center">
                 <a href="index.html">
-                    <h2 class="text-white fw-bold m-0">WELDORK</h2>
+                    <h2 class="text-white fw-bold m-0" data-i18n="brand">PETROV METAL</h2>
                 </a>
                 <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
-                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
+                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i><span data-i18n="address">123 Street, New York, USA</span></small>
+                    <small class="ms-4"><i class="fa fa-envelope me-3"></i><span data-i18n="email">info@example.com</span></small>
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i><span data-i18n="phone">+012 345 67890</span></small>
                     <div class="ms-3 d-flex">
                         <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
                                 class="fab fa-facebook-f"></i></a>
@@ -60,6 +60,8 @@
                         <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
+                    <!-- Language Switcher Container -->
+                    <div id="language-switcher-container"></div>
                 </div>
             </div>
         </div>
@@ -337,6 +339,10 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- i18n Translation Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

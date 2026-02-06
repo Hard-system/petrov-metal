@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>WELDORK - Welding Website Template</title>
+    <title>PETROV METAL - About Us</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -46,12 +46,12 @@
         <div class="container py-3">
             <div class="d-flex align-items-center">
                 <a href="index.html">
-                    <h2 class="text-white fw-bold m-0">WELDORK</h2>
+                    <h2 class="text-white fw-bold m-0" data-i18n="brand">PETROV METAL</h2>
                 </a>
                 <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
-                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
+                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i><span data-i18n="address">123 Street, New York, USA</span></small>
+                    <small class="ms-4"><i class="fa fa-envelope me-3"></i><span data-i18n="email">info@example.com</span></small>
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i><span data-i18n="phone">+012 345 67890</span></small>
                     <div class="ms-3 d-flex">
                         <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
                                 class="fab fa-facebook-f"></i></a>
@@ -60,6 +60,8 @@
                         <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
+                    <!-- Language Switcher Container -->
+                    <div id="language-switcher-container"></div>
                 </div>
             </div>
         </div>
@@ -72,7 +74,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">WELDORK</h1>
+                    <h1 class="fw-bold m-0" data-i18n="brand">PETROV METAL</h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -80,24 +82,26 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="index.html" class="nav-item nav-link" data-i18n="nav_home">Home</a>
+                        <a href="about.html" class="nav-item nav-link active" data-i18n="nav_about">About</a>
+                        <a href="service.html" class="nav-item nav-link" data-i18n="nav_services">Services</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-i18n="nav_pages">Pages</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">Features</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="appoinment.html" class="dropdown-item">Appoinment</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="feature.html" class="dropdown-item" data-i18n="nav_features">Features</a>
+                                <a href="team.html" class="dropdown-item" data-i18n="nav_team">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item" data-i18n="nav_testimonial">Testimonial</a>
+                                <a href="appoinment.html" class="dropdown-item" data-i18n="nav_appointment">Appointment</a>
+                                <a href="404.html" class="dropdown-item" data-i18n="nav_404">404 Page</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link" data-i18n="nav_contact">Contact</a>
                     </div>
                     <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary py-2 px-3">Get A Quote</a>
+                        <a href="" class="btn btn-primary py-2 px-3" data-i18n="get_quote">Get A Quote</a>
                     </div>
+                    <!-- Mobile Language Switcher -->
+                    <div id="mobile-language-switcher" class="d-lg-none"></div>
                 </div>
             </nav>
         </div>
@@ -419,13 +423,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-semi-bold" href="#">Your Site Name</a>, All Right Reserved.
+                    &copy; <a class="fw-semi-bold" href="#">PETROV METAL</a>, <span data-i18n="copyright">All Right Reserved.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** This template is free as long as you keep the below author's credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author's credit link/attribution link/backlink, ***/-->
                     <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></a>
+                    <span data-i18n="designed_by">Designed By</span> <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> <span data-i18n="distributed_by">Distributed by</span> <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
                 </div>
             </div>
         </div>
@@ -449,6 +453,10 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- i18n Translation Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>
