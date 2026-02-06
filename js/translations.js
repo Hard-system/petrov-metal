@@ -53,7 +53,6 @@ const translations = {
         best_welder_text: "Our certified welders bring years of experience to every project.",
         quality_tools: "Quality Tools",
         quality_tools_text: "State-of-the-art equipment ensuring precision and durability.",
-        read_more: "Read More",
 
         // Why Choose Us
         why_choose_title: "Why You Should Choose Our Welding Services",
@@ -180,7 +179,6 @@ const translations = {
         best_welder_text: "Наши сертифицированные сварщики имеют многолетний опыт работы.",
         quality_tools: "Качественные инструменты",
         quality_tools_text: "Современное оборудование для точности и долговечности.",
-        read_more: "Подробнее",
 
         // Why Choose Us
         why_choose_title: "Почему стоит выбрать наши сварочные услуги",
@@ -307,7 +305,6 @@ const translations = {
         best_welder_text: "Нашите сертифицирани заварчици имат дългогодишен опит.",
         quality_tools: "Качествени инструменти",
         quality_tools_text: "Съвременно оборудване за прецизност и издръжливост.",
-        read_more: "Прочети повече",
 
         // Why Choose Us
         why_choose_title: "Защо да изберете нашите заваръчни услуги",
