@@ -10,7 +10,7 @@ const translations = {
         address: "Pliska Street, Pomorie, Bulgaria",
         email: "info@petrovmetal.com",
         phone: "+359 888 123 456",
-        
+
         // Contact Page
         contact_title: "Contact Us",
         contact_text: "Have any questions? Feel free to reach out to us via phone or email.",
@@ -133,7 +133,7 @@ const translations = {
         address: "ул. Плиска, Поморие, Болгария",
         email: "info@petrovmetal.com",
         phone: "+359 888 123 456",
-        
+
         // Contact Page
         contact_title: "Свяжитесь с нами",
         contact_text: "Есть вопросы? Свяжитесь с нами по телефону или электронной почте.",
@@ -256,7 +256,7 @@ const translations = {
         address: "ул. Плиска, Поморие, България",
         email: "info@petrovmetal.com",
         phone: "+359 888 123 456",
-        
+
         // Contact Page
         contact_title: "Свържете се с нас",
         contact_text: "Имате въпроси? Свържете се с нас по телефон или имейл.",
