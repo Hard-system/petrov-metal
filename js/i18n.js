@@ -97,7 +97,7 @@
     function updateLanguageSwitcher(lang) {
         const currentLangBtn = document.getElementById('currentLang');
         const langDropdownItems = document.querySelectorAll('.lang-dropdown-item');
-        
+
         if (currentLangBtn) {
             const config = langConfig[lang];
             currentLangBtn.innerHTML = `${config.flag} ${config.name} <i class="fas fa-chevron-down ms-1"></i>`;
