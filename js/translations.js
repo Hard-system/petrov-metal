@@ -9,7 +9,7 @@ const translations = {
         // Topbar
         address: "Pliska Street, Pomorie, Bulgaria",
         email: "info@petrovmetal.com",
-        phone: "+359 898 796 060",
+        phone: "+359 888 123 456",
 
         // Contact Page
         contact_title: "Contact Us",
@@ -71,6 +71,10 @@ const translations = {
         custom_welding: "Custom Welding",
         metal_work: "Metal Work",
         service_text: "Professional metal fabrication and welding services for all your needs.",
+        service_metal_works_desc: "Comprehensive metalworking solutions for industrial and residential projects.",
+        service_steel_welding_desc: "High-strength steel welding services ensuring durability and precision.",
+        service_pipe_welding_desc: "Expert pipe welding for plumbing, industrial, and structural applications.",
+        service_custom_welding_desc: "Tailored welding solutions designed to meet your specific requirements.",
 
         // Appointment Section
         appointment_title: "We Complete Welding & Metal Projects in Time",
@@ -102,6 +106,7 @@ const translations = {
 
         // Footer
         our_office: "Our Office",
+        quick_links: "Quick Links",
         about_us: "About Us",
         contact_us: "Contact Us",
         our_services: "Our Services",
@@ -131,7 +136,7 @@ const translations = {
         // Topbar
         address: "ул. Плиска, Поморие, Болгария",
         email: "info@petrovmetal.com",
-        phone: "+359 898 796 060",
+        phone: "+359 888 123 456",
 
         // Contact Page
         contact_title: "Свяжитесь с нами",
@@ -193,6 +198,10 @@ const translations = {
         custom_welding: "Заказная сварка",
         metal_work: "Работа с металлом",
         service_text: "Профессиональные услуги по металлообработке и сварке для всех ваших нужд.",
+        service_metal_works_desc: "Комплексные решения по металлообработке для промышленных и жилых проектов.",
+        service_steel_welding_desc: "Услуги сварки высокопрочной стали, обеспечивающие долговечность и точность.",
+        service_pipe_welding_desc: "Экспертная сварка труб для сантехнических, промышленных и строительных нужд.",
+        service_custom_welding_desc: "Индивидуальные сварочные решения, разработанные под ваши конкретные требования.",
 
         // Appointment Section
         appointment_title: "Мы выполняем сварочные и металлические проекты в срок",
@@ -224,6 +233,7 @@ const translations = {
 
         // Footer
         our_office: "Наш офис",
+        quick_links: "Быстрые ссылки",
         about_us: "О нас",
         contact_us: "Связаться с нами",
         our_services: "Наши услуги",
@@ -253,7 +263,7 @@ const translations = {
         // Topbar
         address: "ул. Плиска, Поморие, България",
         email: "info@petrovmetal.com",
-        phone: "+359 898 796 060",
+        phone: "+359 888 123 456",
 
         // Contact Page
         contact_title: "Свържете се с нас",
@@ -315,6 +325,10 @@ const translations = {
         custom_welding: "Поръчково заваряване",
         metal_work: "Работа с метал",
         service_text: "Професионални услуги за металообработка и заваряване за всички ваши нужди.",
+        service_metal_works_desc: "Цялостни решения за металообработка за промишлени и жилищни проекти.",
+        service_steel_welding_desc: "Услуги за заваряване на високоякостна стомана, гарантиращи издръжливост и прецизност.",
+        service_pipe_welding_desc: "Експертно заваряване на тръби за водопроводни, промишлени и конструктивни приложения.",
+        service_custom_welding_desc: "Индивидуални заваръчни решения, проектирани да отговорят на вашите специфични изисквания.",
 
         // Appointment Section
         appointment_title: "Изпълняваме заваръчни и метални проекти навреме",
@@ -346,6 +360,7 @@ const translations = {
 
         // Footer
         our_office: "Нашият офис",
+        quick_links: "Бързи връзки",
         about_us: "За нас",
         contact_us: "Свържете се с нас",
         our_services: "Нашите услуги",
