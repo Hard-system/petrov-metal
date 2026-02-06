@@ -9,7 +9,7 @@ const translations = {
         // Topbar
         address: "Pliska Street, Pomorie, Bulgaria",
         email: "info@petrovmetal.com",
-        phone: "+359 888 123 456",
+        phone: "+359 898 796 060",
 
         // Contact Page
         contact_title: "Contact Us",
@@ -32,7 +32,6 @@ const translations = {
 
         // Carousel
         carousel_title: "Best Metalcraft Solutions",
-        explore_more: "Explore More",
 
         // About Section
         about_title: "Ultimate Welding and Quality Metal Solutions",
@@ -135,7 +134,7 @@ const translations = {
         // Topbar
         address: "ул. Плиска, Поморие, Болгария",
         email: "info@petrovmetal.com",
-        phone: "+359 888 123 456",
+        phone: "+359 898 796 060",
 
         // Contact Page
         contact_title: "Свяжитесь с нами",
@@ -158,7 +157,6 @@ const translations = {
 
         // Carousel
         carousel_title: "Лучшие решения для металлообработки",
-        explore_more: "Узнать больше",
 
         // About Section
         about_title: "Высококачественная сварка и металлические решения",
@@ -261,7 +259,7 @@ const translations = {
         // Topbar
         address: "ул. Плиска, Поморие, България",
         email: "info@petrovmetal.com",
-        phone: "+359 888 123 456",
+        phone: "+359 898 796 060",
 
         // Contact Page
         contact_title: "Свържете се с нас",
@@ -284,7 +282,6 @@ const translations = {
 
         // Carousel
         carousel_title: "Най-добрите решения за металообработка",
-        explore_more: "Научи повече",
 
         // About Section
         about_title: "Висококачествено заваряване и метални решения",
