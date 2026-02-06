@@ -60,8 +60,12 @@
                         <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <!-- Language Switcher Container -->
-                    <div id="language-switcher-container"></div>
+                    <!-- Language Switcher -->
+                    <div class="language-switcher ms-4">
+                        <a href="#" class="btn btn-light btn-sm lang-btn me-1" data-lang="bg">BG</a>
+                        <a href="#" class="btn btn-light btn-sm lang-btn me-1" data-lang="ru">RU</a>
+                        <a href="#" class="btn btn-light btn-sm lang-btn" data-lang="en">EN</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -444,82 +448,6 @@
     <!-- Service End -->
 
 
-    <!-- Appointment Start -->
-    <div class="container-fluid appoinment mt-6 mb-6 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container pt-5">
-            <div class="row gy-5 gx-0">
-                <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-6 text-uppercase text-white mb-4" data-i18n="appointment_title">We Complete Welding & Metal Projects in Time
-                    </h1>
-                    <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s" data-i18n="appointment_text">Schedule your appointment today and experience our professional service firsthand.</p>
-                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.5s">
-                        <div class="btn-lg-square bg-white">
-                            <i class="bi bi-geo-alt text-dark fs-3"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h6 class="text-white text-uppercase" data-i18n="office_address">Office Address</h6>
-                            <span class="text-white" data-i18n="address">123 Street, New York, USA</span>
-                        </div>
-                    </div>
-                    <hr class="bg-body">
-                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.6s">
-                        <div class="btn-lg-square bg-white">
-                            <i class="bi bi-clock text-dark fs-3"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h6 class="text-white text-uppercase" data-i18n="office_time">Office Time</h6>
-                            <span class="text-white" data-i18n="office_hours">Mon-Sat 09am-5pm, Sun Closed</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="bg-white p-5">
-                        <h2 class="text-uppercase mb-4" data-i18n="online_appointment">Online Appointment</h2>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
-                                    <label for="name" data-i18n="your_name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control border-0 bg-light" id="mail" placeholder="Your Email">
-                                    <label for="mail" data-i18n="your_email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" id="mobile" placeholder="Your Mobile">
-                                    <label for="mobile" data-i18n="your_mobile">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <select class="form-select border-0 bg-light" id="service">
-                                        <option selected data-i18n="steel_welding">Steel Welding</option>
-                                        <option value="" data-i18n="pipe_welding">Pipe Welding</option>
-                                    </select>
-                                    <label for="service" data-i18n="choose_service">Choose A Service</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0 bg-light" placeholder="Leave a message here" id="message"
-                                        style="height: 130px"></textarea>
-                                    <label for="message" data-i18n="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary w-100 py-3" type="submit" data-i18n="submit_now">Submit Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Appointment End -->
 
 
     <!-- Team Start -->
@@ -708,30 +636,6 @@
     <!-- Testimonial End -->
 
 
-    <!-- Newsletter Start -->
-    <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container pb-5">
-            <div class="bg-white p-5 mb-5">
-                <div class="row g-5">
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-                        <h1 class="display-6 text-uppercase mb-4" data-i18n="newsletter">Newsletter</h1>
-                        <div class="d-flex">
-                            <i class="far fa-envelope-open fa-3x text-primary me-4"></i>
-                            <p class="fs-5 fst-italic mb-0" data-i18n="newsletter_text">Subscribe to our newsletter to receive updates on our latest offers and services.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control border-0 bg-light" id="newsletter-mail" placeholder="Your Email">
-                            <label for="newsletter-mail" data-i18n="your_email">Your Email</label>
-                        </div>
-                        <button class="btn btn-primary w-100 py-3" type="submit" data-i18n="submit_now">Submit Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Newsletter End -->
 
 
     <!-- Footer Start -->
@@ -808,10 +712,7 @@
                     &copy; <a class="fw-semi-bold" href="#">PETROV METAL</a>, <span data-i18n="copyright">All Right Reserved.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the below author's credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author's credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    <span data-i18n="designed_by">Designed By</span> <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> <span data-i18n="distributed_by">Distributed by</span> <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    <span data-i18n="designed_by">Designed by</span> <a class="fw-semi-bold" href="#">MadeByHumans</a>
                 </div>
             </div>
         </div>

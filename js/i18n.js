@@ -22,13 +22,13 @@
         if (saved && SUPPORTED_LANGS.includes(saved)) {
             return saved;
         }
-        
+
         // Try to detect from browser
         const browserLang = navigator.language.slice(0, 2);
         if (SUPPORTED_LANGS.includes(browserLang)) {
             return browserLang;
         }
-        
+
         return DEFAULT_LANG;
     }
 
@@ -60,7 +60,7 @@
         document.querySelectorAll('[data-i18n]').forEach(function(element) {
             const key = element.getAttribute('data-i18n');
             const translation = getTranslation(lang, key);
-            
+
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 if (element.getAttribute('placeholder')) {
                     element.setAttribute('placeholder', translation);
@@ -112,6 +112,23 @@
                 item.classList.remove('active');
             }
         });
+
+        // Update static language buttons
+        updateLanguageButtons(lang);
+    }
+
+    // Update language button active states
+    function updateLanguageButtons(lang) {
+        document.querySelectorAll('.lang-btn').forEach(function(btn) {
+            const btnLang = btn.getAttribute('data-lang');
+            if (btnLang === lang) {
+                btn.classList.remove('btn-light');
+                btn.classList.add('btn-warning', 'active');
+            } else {
+                btn.classList.remove('btn-warning', 'active');
+                btn.classList.add('btn-light');
+            }
+        });
     }
 
     // Switch language
@@ -156,7 +173,7 @@
 
     function initLanguage() {
         const currentLang = getSavedLanguage();
-        
+
         // Insert language switcher into navbar
         const langSwitcherContainer = document.getElementById('language-switcher-container');
         if (langSwitcherContainer) {
@@ -174,7 +191,7 @@
 
         // Add click handlers for language switching
         document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('lang-dropdown-item')) {
+            if (e.target.classList.contains('lang-dropdown-item') || e.target.classList.contains('lang-btn')) {
                 e.preventDefault();
                 const lang = e.target.getAttribute('data-lang');
                 if (lang) {
@@ -182,6 +199,9 @@
                 }
             }
         });
+
+        // Update active state on language buttons
+        updateLanguageButtons(currentLang);
     }
 
     // Expose API globally

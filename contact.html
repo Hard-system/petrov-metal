@@ -60,8 +60,12 @@
                         <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <!-- Language Switcher Container -->
-                    <div id="language-switcher-container"></div>
+                    <!-- Language Switcher -->
+                    <div class="language-switcher ms-4">
+                        <a href="#" class="btn btn-light btn-sm lang-btn me-1" data-lang="bg">BG</a>
+                        <a href="#" class="btn btn-light btn-sm lang-btn me-1" data-lang="ru">RU</a>
+                        <a href="#" class="btn btn-light btn-sm lang-btn" data-lang="en">EN</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,68 +137,44 @@
     <div class="pt-6 pb-6">
         <div class="container-fluid appoinment py-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container pt-5">
-                <div class="row gy-5 gx-0">
-                    <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
-                        <h1 class="display-6 text-uppercase text-white mb-4">Have Any Query? Feel Free To Contact Us
+                <div class="row gy-5 gx-0 justify-content-center">
+                    <div class="col-lg-8 wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-6 text-uppercase text-white mb-4 text-center" data-i18n="contact_title">Contact Us
                         </h1>
-                        <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                        <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.5s">
-                            <div class="btn-lg-square bg-white">
-                                <i class="bi bi-envelope-at text-dark fs-3"></i>
+                        <p class="text-white mb-5 text-center wow fadeIn" data-wow-delay="0.4s" data-i18n="contact_text">Have any questions? Feel free to reach out to us via phone or email.</p>
+                        
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 mb-4">
+                                <div class="d-flex align-items-start wow fadeIn bg-white p-4 rounded" data-wow-delay="0.5s">
+                                    <div class="btn-lg-square bg-primary">
+                                        <i class="bi bi-geo-alt text-white fs-3"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6 class="text-dark text-uppercase" data-i18n="office_address">Office Address</h6>
+                                        <span class="text-dark" data-i18n="address">Pliska Street, Pomorie, Bulgaria</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="ms-3">
-                                <h6 class="text-white text-uppercase">Mail Us</h6>
-                                <span class="text-white">info@example.com</span>
+                            <div class="col-md-5 mb-4">
+                                <div class="d-flex align-items-start wow fadeIn bg-white p-4 rounded" data-wow-delay="0.5s">
+                                    <div class="btn-lg-square bg-primary">
+                                        <i class="bi bi-envelope-at text-white fs-3"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6 class="text-dark text-uppercase" data-i18n="email_us">Email Us</h6>
+                                        <a href="mailto:info@petrovmetal.com" class="text-dark">info@petrovmetal.com</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <hr class="bg-body">
-                        <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.6s">
-                            <div class="btn-lg-square bg-white">
-                                <i class="bi bi-telephone text-dark fs-3"></i>
-                            </div>
-                            <div class="ms-3">
-                                <h6 class="text-white text-uppercase">Call Us</h6>
-                                <span class="text-white">+012 345 67890</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.7s">
-                        <div class="bg-white p-5">
-                            <h2 class="text-uppercase mb-4">Contact Us</h2>
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                            <div class="col-md-5 mb-4">
+                                <div class="d-flex align-items-start wow fadeIn bg-white p-4 rounded" data-wow-delay="0.6s">
+                                    <div class="btn-lg-square bg-primary">
+                                        <i class="bi bi-telephone text-white fs-3"></i>
                                     </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control border-0 bg-light" id="mail" placeholder="Your Email">
-                                        <label for="mail">Your Email</label>
+                                    <div class="ms-3">
+                                        <h6 class="text-dark text-uppercase" data-i18n="call_us">Call Us</h6>
+                                        <a href="tel:+359888123456" class="text-dark">+359 888 123 456</a>
                                     </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-light" id="mobile" placeholder="Your Mobile">
-                                        <label for="mobile">Your Mobile</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control border-0 bg-light" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control border-0 bg-light" placeholder="Leave a message here" id="message"
-                                            style="height: 130px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
                                 </div>
                             </div>
                         </div>
@@ -202,40 +182,17 @@
                 </div>
             </div>
         </div>
+        <!-- Google Maps - Pliska Street, Pomorie, Bulgaria -->
         <div class="container-fluid px-0 wow fadeInUp" data-wow-delay="0.5s">
-            <iframe class="w-100 h-100"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-            frameborder="0" style="min-height: 500px; border:0;" allowfullscreen="" aria-hidden="false"
+            <iframe class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.8504536857387!2d27.6383!3d42.5569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a7d8b0c7e8f8f7%3A0x8b7e8b7e8b7e8b7e!2sul.%20Pliska%2C%20Pomorie%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1699000000000!5m2!1sen!2sbg"
+            frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe>
         </div>
     </div>
     <!-- Contact End -->
 
 
-    <!-- Newsletter Start -->
-    <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container pb-5">
-            <div class="bg-white p-5 mb-5">
-                <div class="row g-5">
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-                        <h1 class="display-6 text-uppercase mb-4">Newsletter</h1>
-                        <div class="d-flex">
-                            <i class="far fa-envelope-open fa-3x text-primary me-4"></i>
-                            <p class="fs-5 fst-italic mb-0">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore lorem ipsum.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control border-0 bg-light" id="mail" placeholder="Your Email">
-                            <label for="mail">Your Email</label>
-                        </div>
-                        <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Newsletter End -->
 
 
     <!-- Footer Start -->
@@ -312,10 +269,7 @@
                     &copy; <a class="fw-semi-bold" href="#">Your Site Name</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HTML Codex</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></a>
+                    <span data-i18n="designed_by">Designed by</span> <a class="fw-semi-bold" href="#">MadeByHumans</a>
                 </div>
             </div>
         </div>

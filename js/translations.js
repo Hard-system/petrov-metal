@@ -5,12 +5,12 @@ const translations = {
     en: {
         // Brand
         brand: "PETROV METAL",
-        
+
         // Topbar
         address: "123 Street, New York, USA",
         email: "info@example.com",
         phone: "+012 345 67890",
-        
+
         // Navigation
         nav_home: "Home",
         nav_about: "About",
@@ -23,11 +23,11 @@ const translations = {
         nav_404: "404 Page",
         nav_contact: "Contact",
         get_quote: "Get A Quote",
-        
+
         // Carousel
         carousel_title: "Best Metalcraft Solutions",
         explore_more: "Explore More",
-        
+
         // About Section
         about_title: "Ultimate Welding and Quality Metal Solutions",
         about_text: "We specialize in high-quality metal fabrication and welding services. Our experienced team delivers precision craftsmanship for residential, commercial, and industrial projects.",
@@ -37,7 +37,7 @@ const translations = {
         check_item_2: "High-quality materials and modern equipment",
         check_item_3: "Timely delivery and competitive pricing",
         about_highlight: "We're Good in All Metal Works Using Quality Welding Tools",
-        
+
         // Features Section
         quality_welding: "Quality Welding",
         quality_welding_text: "Expert welding services using the latest technology and highest quality standards.",
@@ -48,7 +48,7 @@ const translations = {
         quality_tools: "Quality Tools",
         quality_tools_text: "State-of-the-art equipment ensuring precision and durability.",
         read_more: "Read More",
-        
+
         // Why Choose Us
         why_choose_title: "Why You Should Choose Our Welding Services",
         why_choose_text: "With years of experience and a commitment to excellence, we deliver outstanding results on every project. Our team combines expertise with cutting-edge technology.",
@@ -56,7 +56,7 @@ const translations = {
         complete_projects: "Complete Projects",
         experience: "Experience",
         work_done: "Work Done",
-        
+
         // Services Section
         services_title: "Reliable & High-Quality Welding Services",
         metal_works: "Metal Works",
@@ -65,7 +65,7 @@ const translations = {
         custom_welding: "Custom Welding",
         metal_work: "Metal Work",
         service_text: "Professional metal fabrication and welding services for all your needs.",
-        
+
         // Appointment Section
         appointment_title: "We Complete Welding & Metal Projects in Time",
         appointment_text: "Schedule your appointment today and experience our professional service firsthand.",
@@ -79,21 +79,21 @@ const translations = {
         choose_service: "Choose A Service",
         message: "Message",
         submit_now: "Submit Now",
-        
+
         // Team Section
         team_title: "Meet Our Professional and Experienced Welders",
         welder: "Welder",
-        
+
         // Testimonial Section
         testimonial_title: "What They're Talking About Our Welding Work",
         client_name: "Client Name",
         profession: "Profession",
         testimonial_text: "Excellent work and professional service. The team delivered exactly what we needed, on time and within budget. Highly recommended!",
-        
+
         // Newsletter
         newsletter: "Newsletter",
         newsletter_text: "Subscribe to our newsletter to receive updates on our latest offers and services.",
-        
+
         // Footer
         our_office: "Our Office",
         quick_links: "Quick Links",
@@ -108,27 +108,26 @@ const translations = {
         sunday: "Sunday",
         closed: "Closed",
         gallery: "Gallery",
-        
+
         // Copyright
         copyright: "All Right Reserved.",
-        designed_by: "Designed By",
-        distributed_by: "Distributed by",
-        
+        designed_by: "Designed by",
+
         // Language names
         lang_en: "English",
         lang_ru: "Русский",
         lang_bg: "Български"
     },
-    
+
     ru: {
         // Brand
         brand: "ПЕТРОВ МЕТАЛ",
-        
+
         // Topbar
         address: "123 Улица, Нью-Йорк, США",
         email: "info@example.com",
         phone: "+012 345 67890",
-        
+
         // Navigation
         nav_home: "Главная",
         nav_about: "О нас",
@@ -141,11 +140,11 @@ const translations = {
         nav_404: "Страница 404",
         nav_contact: "Контакты",
         get_quote: "Получить цену",
-        
+
         // Carousel
         carousel_title: "Лучшие решения для металлообработки",
         explore_more: "Узнать больше",
-        
+
         // About Section
         about_title: "Высококачественная сварка и металлические решения",
         about_text: "Мы специализируемся на высококачественной металлообработке и сварочных услугах. Наша опытная команда обеспечивает точное мастерство для жилых, коммерческих и промышленных проектов.",
@@ -155,7 +154,7 @@ const translations = {
         check_item_2: "Высококачественные материалы и современное оборудование",
         check_item_3: "Своевременная доставка и конкурентные цены",
         about_highlight: "Мы профессионалы во всех видах металлообработки с использованием качественных инструментов",
-        
+
         // Features Section
         quality_welding: "Качественная сварка",
         quality_welding_text: "Экспертные сварочные услуги с использованием новейших технологий и высочайших стандартов качества.",
@@ -166,7 +165,7 @@ const translations = {
         quality_tools: "Качественные инструменты",
         quality_tools_text: "Современное оборудование для точности и долговечности.",
         read_more: "Подробнее",
-        
+
         // Why Choose Us
         why_choose_title: "Почему стоит выбрать наши сварочные услуги",
         why_choose_text: "С многолетним опытом и стремлением к совершенству, мы достигаем отличных результатов в каждом проекте. Наша команда сочетает экспертизу с передовыми технологиями.",
@@ -174,7 +173,7 @@ const translations = {
         complete_projects: "Завершённых проектов",
         experience: "Опыт",
         work_done: "Выполнено работ",
-        
+
         // Services Section
         services_title: "Надёжные и качественные сварочные услуги",
         metal_works: "Металлообработка",
@@ -183,7 +182,7 @@ const translations = {
         custom_welding: "Заказная сварка",
         metal_work: "Работа с металлом",
         service_text: "Профессиональные услуги по металлообработке и сварке для всех ваших нужд.",
-        
+
         // Appointment Section
         appointment_title: "Мы выполняем сварочные и металлические проекты в срок",
         appointment_text: "Запишитесь на приём сегодня и ощутите наш профессиональный сервис.",
@@ -197,21 +196,21 @@ const translations = {
         choose_service: "Выберите услугу",
         message: "Сообщение",
         submit_now: "Отправить",
-        
+
         // Team Section
         team_title: "Познакомьтесь с нашими профессиональными сварщиками",
         welder: "Сварщик",
-        
+
         // Testimonial Section
         testimonial_title: "Что говорят о нашей работе",
         client_name: "Имя клиента",
         profession: "Профессия",
         testimonial_text: "Отличная работа и профессиональный сервис. Команда сделала именно то, что нам было нужно, вовремя и в рамках бюджета. Очень рекомендую!",
-        
+
         // Newsletter
         newsletter: "Рассылка",
         newsletter_text: "Подпишитесь на нашу рассылку, чтобы получать обновления о наших последних предложениях и услугах.",
-        
+
         // Footer
         our_office: "Наш офис",
         quick_links: "Быстрые ссылки",
@@ -226,27 +225,26 @@ const translations = {
         sunday: "Воскресенье",
         closed: "Закрыто",
         gallery: "Галерея",
-        
+
         // Copyright
         copyright: "Все права защищены.",
         designed_by: "Дизайн",
-        distributed_by: "Распространяется",
-        
+
         // Language names
         lang_en: "English",
         lang_ru: "Русский",
         lang_bg: "Български"
     },
-    
+
     bg: {
         // Brand
         brand: "ПЕТРОВ МЕТАЛ",
-        
+
         // Topbar
         address: "123 Улица, Ню Йорк, САЩ",
         email: "info@example.com",
         phone: "+012 345 67890",
-        
+
         // Navigation
         nav_home: "Начало",
         nav_about: "За нас",
@@ -259,11 +257,11 @@ const translations = {
         nav_404: "Страница 404",
         nav_contact: "Контакти",
         get_quote: "Поискай оферта",
-        
+
         // Carousel
         carousel_title: "Най-добрите решения за металообработка",
         explore_more: "Научи повече",
-        
+
         // About Section
         about_title: "Висококачествено заваряване и метални решения",
         about_text: "Специализирани сме във висококачествена металообработка и заваръчни услуги. Нашият опитен екип осигурява прецизно изработване за жилищни, търговски и промишлени проекти.",
@@ -273,7 +271,7 @@ const translations = {
         check_item_2: "Висококачествени материали и модерно оборудване",
         check_item_3: "Навременна доставка и конкурентни цени",
         about_highlight: "Ние сме добри във всички видове металообработка с качествени инструменти за заваряване",
-        
+
         // Features Section
         quality_welding: "Качествено заваряване",
         quality_welding_text: "Експертни заваръчни услуги с използване на най-новите технологии и най-високи стандарти за качество.",
@@ -284,7 +282,7 @@ const translations = {
         quality_tools: "Качествени инструменти",
         quality_tools_text: "Съвременно оборудване за прецизност и издръжливост.",
         read_more: "Прочети повече",
-        
+
         // Why Choose Us
         why_choose_title: "Защо да изберете нашите заваръчни услуги",
         why_choose_text: "С дългогодишен опит и ангажираност към съвършенство, ние постигаме отлични резултати във всеки проект. Нашият екип съчетава експертиза с модерни технологии.",
@@ -292,7 +290,7 @@ const translations = {
         complete_projects: "Завършени проекти",
         experience: "Опит",
         work_done: "Свършена работа",
-        
+
         // Services Section
         services_title: "Надеждни и висококачествени заваръчни услуги",
         metal_works: "Металообработка",
@@ -301,7 +299,7 @@ const translations = {
         custom_welding: "Поръчково заваряване",
         metal_work: "Работа с метал",
         service_text: "Професионални услуги за металообработка и заваряване за всички ваши нужди.",
-        
+
         // Appointment Section
         appointment_title: "Изпълняваме заваръчни и метални проекти навреме",
         appointment_text: "Запишете се за среща днес и изпитайте нашето професионално обслужване.",
@@ -315,21 +313,21 @@ const translations = {
         choose_service: "Изберете услуга",
         message: "Съобщение",
         submit_now: "Изпрати",
-        
+
         // Team Section
         team_title: "Запознайте се с нашите професионални заварчици",
         welder: "Заварчик",
-        
+
         // Testimonial Section
         testimonial_title: "Какво казват за нашата работа",
         client_name: "Име на клиент",
         profession: "Професия",
         testimonial_text: "Отлична работа и професионално обслужване. Екипът достави точно това, от което се нуждаехме, навреме и в рамките на бюджета. Горещо препоръчвам!",
-        
+
         // Newsletter
         newsletter: "Бюлетин",
         newsletter_text: "Абонирайте се за нашия бюлетин, за да получавате актуализации за нашите най-нови оферти и услуги.",
-        
+
         // Footer
         our_office: "Нашият офис",
         quick_links: "Бързи връзки",
@@ -344,12 +342,11 @@ const translations = {
         sunday: "Неделя",
         closed: "Затворено",
         gallery: "Галерия",
-        
+
         // Copyright
         copyright: "Всички права запазени.",
-        designed_by: "Дизайн от",
-        distributed_by: "Разпространява се от",
-        
+        designed_by: "Дизайн",
+
         // Language names
         lang_en: "English",
         lang_ru: "Русский",
