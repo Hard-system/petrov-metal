@@ -258,7 +258,7 @@ const translations = {
 
         // Topbar
         address: "ул. Плиска, Поморие, България",
-        email: "info@petrovmetal.com",
+        email: "iordanpetrov90@abv.bg",
         phone: "+359 898 796 060",
 
         // Contact Page
