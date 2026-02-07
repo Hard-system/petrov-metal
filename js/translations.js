@@ -94,9 +94,20 @@ const translations = {
 
         // Testimonial Section
         testimonial_title: "What They're Talking About Our Welding Work",
-        client_name: "Client Name",
-        profession: "Profession",
-        testimonial_text: "Excellent work and professional service. The team delivered exactly what we needed, on time and within budget. Highly recommended!",
+        testimonial_1_name: "Иван Петров",
+        testimonial_1_text: "Excellent work and professional service. The team delivered exactly what we needed, on time and within budget. Highly recommended!",
+        testimonial_2_name: "Мария Георгиева",
+        testimonial_2_text: "Outstanding craftsmanship and attention to detail. They transformed my vision into reality with precision and care.",
+        testimonial_3_name: "Петр Соколов",
+        testimonial_3_text: "Professional team with years of experience. They completed our industrial project ahead of schedule and to our satisfaction.",
+        testimonial_4_name: "Елена Димитрова",
+        testimonial_4_text: "Reliable, trustworthy, and skilled professionals. I've worked with them multiple times and always get exceptional results.",
+        testimonial_5_name: "Никола Стефанов",
+        testimonial_5_text: "Great communication and transparent pricing. They explain the process clearly and deliver quality work without surprises.",
+        testimonial_6_name: "Анна Козловска",
+        testimonial_6_text: "Their expertise in metal fabrication is unmatched. The final product exceeded all my expectations in quality and durability.",
+        testimonial_7_name: "Александр Минчев",
+        testimonial_7_text: "Highly professional and efficient. They handled our complex welding requirements with expertise and delivered on time.",
 
         // Newsletter
         newsletter: "Newsletter",
@@ -219,9 +230,20 @@ const translations = {
 
         // Testimonial Section
         testimonial_title: "Что говорят о нашей работе",
-        client_name: "Имя клиента",
-        profession: "Профессия",
-        testimonial_text: "Отличная работа и профессиональный сервис. Команда сделала именно то, что нам было нужно, вовремя и в рамках бюджета. Очень рекомендую!",
+        testimonial_1_name: "Иван Петров",
+        testimonial_1_text: "Отличная работа и профессиональный сервис. Команда сделала именно то, что нам было нужно, вовремя и в рамках бюджета. Очень рекомендую!",
+        testimonial_2_name: "Мария Георгиева",
+        testimonial_2_text: "Выдающееся мастерство и внимание к деталям. Они воплотили мое видение в реальность с точностью и заботой.",
+        testimonial_3_name: "Петр Соколов",
+        testimonial_3_text: "Профессиональная команда с многолетним опытом. Они завершили наш промышленный проект раньше срока и к нашему удовлетворению.",
+        testimonial_4_name: "Елена Димитрова",
+        testimonial_4_text: "Надежные, честные и квалифицированные специалисты. Я работал с ними несколько раз и всегда получаю отличные результаты.",
+        testimonial_5_name: "Никола Стефанов",
+        testimonial_5_text: "Отличное общение и прозрачные цены. Они четко объясняют процесс и доставляют качественную работу без неожиданностей.",
+        testimonial_6_name: "Анна Козловска",
+        testimonial_6_text: "Их опыт в металлообработке не имеет себе равных. Готовый продукт превзошел все мои ожидания по качеству и долговечности.",
+        testimonial_7_name: "Александр Минчев",
+        testimonial_7_text: "Высокопрофессиональны и эффективны. Они справились с нашими сложными требованиями по сварке с опытом и вовремя доставили.",
 
         // Newsletter
         newsletter: "Рассылка",
@@ -344,9 +366,20 @@ const translations = {
 
         // Testimonial Section
         testimonial_title: "Какво казват за нашата работа",
-        client_name: "Име на клиент",
-        profession: "Професия",
-        testimonial_text: "Отлична работа и професионално обслужване. Екипът достави точно това, от което се нуждаехме, навреме и в рамките на бюджета. Горещо препоръчвам!",
+        testimonial_1_name: "Иван Петров",
+        testimonial_1_text: "Отлична работа и професионално обслужване. Екипът достави точно това, от което се нуждаехме, навреме и в рамките на бюджета. Горещо препоръчвам!",
+        testimonial_2_name: "Мария Георгиева",
+        testimonial_2_text: "Изключително занаятчилство и внимание към детайлите. Те превърнаха моята визия в реалност с точност и грижа.",
+        testimonial_3_name: "Петър Соколов",
+        testimonial_3_text: "Професионален екип с години опит. Те завършиха нашия индустриален проект по-рано от срока и за наше задоволство.",
+        testimonial_4_name: "Елена Димитрова",
+        testimonial_4_text: "Надеждни, честни и квалифицирани специалисти. Работил съм с тях много пъти и винаги получавам отлични резултати.",
+        testimonial_5_name: "Никола Стефанов",
+        testimonial_5_text: "Отлична комуникация и прозрачни цени. Те ясно обясняват процеса и доставят качествена работа без изненади.",
+        testimonial_6_name: "Анна Козловска",
+        testimonial_6_text: "Техния опит в металообработката е безсравнен. Крайният продукт надмина всичките ми очаквания за качество и трайност.",
+        testimonial_7_name: "Александър Минчев",
+        testimonial_7_text: "Високопрофесионални и ефективни. Справиха се с нашите сложни изисквания за заваряване с опит и доставиха навреме.",
 
         // Newsletter
         newsletter: "Бюлетин",
