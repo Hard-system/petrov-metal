@@ -37,11 +37,15 @@
         if (window.translations && window.translations[lang] && window.translations[lang][key]) {
             return window.translations[lang][key];
         }
-        // Fallback to English
-        if (window.translations && window.translations[DEFAULT_LANG] && window.translations[DEFAULT_LANG][key]) {
+        // Fallback: try other languages to avoid showing raw key or wrong language
+        // When EN is selected but key missing, prefer DEFAULT_LANG over showing key
+        if (lang !== DEFAULT_LANG && window.translations && window.translations[DEFAULT_LANG] && window.translations[DEFAULT_LANG][key]) {
             return window.translations[DEFAULT_LANG][key];
         }
-        return key; // Return key as fallback
+        if (lang !== 'en' && window.translations && window.translations.en && window.translations.en[key]) {
+            return window.translations.en[key];
+        }
+        return key; // Return key as last fallback
     }
 
     // Apply translations to the page
@@ -151,28 +155,39 @@
 
     // Update internal links to include ?lang=XX so navigation preserves language
     function updateLinksWithLang(lang) {
-        // Update all anchor tags that link to local HTML pages (not external, not mailto/tel)
         document.querySelectorAll('a[href]').forEach(function(a) {
             const href = a.getAttribute('href');
             if (!href) return;
-            // Skip external links and anchors and javascript/mailto/tel
+            // Skip external, anchors, and language switcher buttons
             if (href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return;
+            if (a.classList.contains('lang-btn') || a.classList.contains('lang-dropdown-item')) return;
 
-            // Only process .html pages or plain paths
-            // Build new URL object relative to current location
             try {
-                const url = new URL(href, window.location.href);
-                // Only modify if same origin
-                if (url.origin !== window.location.origin) return;
-                // Set or replace lang param
-                url.searchParams.set('lang', lang);
-                // Use relative path when original was relative
-                const relative = url.pathname + url.search + url.hash;
-                a.setAttribute('href', relative);
+                // Preserve original relative path (e.g. "gallery.html") to avoid path resolution issues
+                const hashIndex = href.indexOf('#');
+                const pathAndQuery = hashIndex >= 0 ? href.substring(0, hashIndex) : href;
+                const hash = hashIndex >= 0 ? href.substring(hashIndex) : '';
+                const qIndex = pathAndQuery.indexOf('?');
+                const path = qIndex >= 0 ? pathAndQuery.substring(0, qIndex) : pathAndQuery;
+                const params = new URLSearchParams(qIndex >= 0 ? pathAndQuery.substring(qIndex + 1) : '');
+                params.set('lang', lang);
+                const newHref = path + '?' + params.toString() + hash;
+                a.setAttribute('href', newHref);
             } catch (e) {
-                // ignore invalid URLs
+                // ignore
             }
         });
+    }
+
+    // Update browser URL with lang param (without reload)
+    function updateUrlWithLang(lang) {
+        try {
+            var url = new URL(window.location.href);
+            url.searchParams.set('lang', lang);
+            window.history.replaceState({}, '', url.toString());
+        } catch (e) {
+            // ignore
+        }
     }
 
     // Switch language
@@ -184,8 +199,9 @@
 
         saveLanguage(lang);
         applyTranslations(lang);
-        // Ensure links keep the selected language when navigating
         updateLinksWithLang(lang);
+        // Do NOT update URL here - some dev servers (e.g. Live Server) reload on URL change,
+        // which can cause a flash back to the previous language
     }
 
     // Create language switcher HTML
@@ -242,7 +258,6 @@
 
         // Add click handlers for language switching
         document.addEventListener('click', function(e) {
-            // Use closest so clicks on child nodes (text nodes/icons) are handled
             var el = (e.target && e.target.closest) ? e.target.closest('.lang-dropdown-item, .lang-btn') : null;
             if (el) {
                 e.preventDefault();

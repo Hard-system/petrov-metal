@@ -31,6 +31,9 @@ const translations = {
         nav_contact: "Contact",
         get_quote: "Get A Quote",
 
+        // Carousel
+        carousel_title: "Best Metalcraft Solutions",
+
         // Gallery Section
         gallery_title: "Our Welding Projects Gallery",
         gallery_desc: "Explore our collection of professional welding and metal fabrication projects.",
