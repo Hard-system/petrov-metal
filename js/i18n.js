@@ -200,8 +200,15 @@
         saveLanguage(lang);
         applyTranslations(lang);
         updateLinksWithLang(lang);
-        // Do NOT update URL here - some dev servers (e.g. Live Server) reload on URL change,
-        // which can cause a flash back to the previous language
+
+        // Update URL to match selected language so re-initialization doesn't revert
+        try {
+            const url = new URL(window.location.href);
+            url.searchParams.set('lang', lang);
+            window.history.replaceState({}, '', url.toString());
+        } catch (e) {
+            // ignore
+        }
     }
 
     // Create language switcher HTML
@@ -270,6 +277,7 @@
 
         // Update active state on language buttons
         updateLanguageButtons(currentLang);
+
     }
 
     // Expose API globally
