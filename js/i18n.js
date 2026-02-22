@@ -16,19 +16,14 @@
         bg: { name: 'BG', fullName: 'Български', flag: '🇧🇬' }
     };
 
-    // Get saved language or detect from browser
+    // Get saved language or use default
     function getSavedLanguage() {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (saved && SUPPORTED_LANGS.includes(saved)) {
             return saved;
         }
 
-        // Try to detect from browser
-        const browserLang = navigator.language.slice(0, 2);
-        if (SUPPORTED_LANGS.includes(browserLang)) {
-            return browserLang;
-        }
-
+        // No saved preference: default to DEFAULT_LANG (Bulgarian)
         return DEFAULT_LANG;
     }
 
@@ -126,12 +121,56 @@
     function updateLanguageButtons(lang) {
         document.querySelectorAll('.lang-btn').forEach(function(btn) {
             const btnLang = btn.getAttribute('data-lang');
+            // Ensure button shows canonical short name from langConfig (EN, RU, BG)
+            if (langConfig[btnLang] && langConfig[btnLang].name) {
+                // Preserve button classes but set visible text
+                btn.textContent = langConfig[btnLang].name;
+            }
+
             if (btnLang === lang) {
                 btn.classList.remove('btn-light');
                 btn.classList.add('btn-warning', 'active');
             } else {
                 btn.classList.remove('btn-warning', 'active');
                 btn.classList.add('btn-light');
+            }
+        });
+    }
+
+    // Read lang param from URL if present
+    function getLangFromUrl() {
+        try {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang');
+            if (lang && SUPPORTED_LANGS.includes(lang)) return lang;
+        } catch (e) {
+            // ignore
+        }
+        return null;
+    }
+
+    // Update internal links to include ?lang=XX so navigation preserves language
+    function updateLinksWithLang(lang) {
+        // Update all anchor tags that link to local HTML pages (not external, not mailto/tel)
+        document.querySelectorAll('a[href]').forEach(function(a) {
+            const href = a.getAttribute('href');
+            if (!href) return;
+            // Skip external links and anchors and javascript/mailto/tel
+            if (href.startsWith('http') || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return;
+
+            // Only process .html pages or plain paths
+            // Build new URL object relative to current location
+            try {
+                const url = new URL(href, window.location.href);
+                // Only modify if same origin
+                if (url.origin !== window.location.origin) return;
+                // Set or replace lang param
+                url.searchParams.set('lang', lang);
+                // Use relative path when original was relative
+                const relative = url.pathname + url.search + url.hash;
+                a.setAttribute('href', relative);
+            } catch (e) {
+                // ignore invalid URLs
             }
         });
     }
@@ -145,6 +184,8 @@
 
         saveLanguage(lang);
         applyTranslations(lang);
+        // Ensure links keep the selected language when navigating
+        updateLinksWithLang(lang);
     }
 
     // Create language switcher HTML
@@ -177,7 +218,9 @@
     }
 
     function initLanguage() {
-        const currentLang = getSavedLanguage();
+        // prefer URL lang param first
+        const urlLang = getLangFromUrl();
+        const currentLang = urlLang || getSavedLanguage();
 
         // Insert language switcher into navbar
         const langSwitcherContainer = document.getElementById('language-switcher-container');
@@ -194,11 +237,16 @@
         // Apply translations
         applyTranslations(currentLang);
 
+        // Update internal links with current language so navigation preserves selection
+        updateLinksWithLang(currentLang);
+
         // Add click handlers for language switching
         document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('lang-dropdown-item') || e.target.classList.contains('lang-btn')) {
+            // Use closest so clicks on child nodes (text nodes/icons) are handled
+            var el = (e.target && e.target.closest) ? e.target.closest('.lang-dropdown-item, .lang-btn') : null;
+            if (el) {
                 e.preventDefault();
-                const lang = e.target.getAttribute('data-lang');
+                var lang = el.getAttribute('data-lang');
                 if (lang) {
                     switchLanguage(lang);
                 }
@@ -222,4 +270,3 @@
     // Auto-initialize
     init();
 })();
-
