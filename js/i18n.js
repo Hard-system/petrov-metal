@@ -58,6 +58,11 @@
 
         // Update all elements with data-i18n attribute
         document.querySelectorAll('[data-i18n]').forEach(function(element) {
+            // Skip language buttons - they should keep their static text
+            if (element.classList && element.classList.contains('lang-btn')) {
+                return;
+            }
+
             const key = element.getAttribute('data-i18n');
             const translation = getTranslation(lang, key);
 

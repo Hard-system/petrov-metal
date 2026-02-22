@@ -8,7 +8,7 @@ const translations = {
 
         // Topbar
         address: "Pliska Street, Pomorie, Bulgaria",
-        email: "info@petrovmetal.com",
+        email: "iordanpetrov90@abv.bg",
         phone: "+359 898 796 060",
 
         // Contact Page
@@ -21,6 +21,7 @@ const translations = {
         nav_home: "Home",
         nav_about: "About",
         nav_services: "Services",
+        nav_gallery: "Gallery",
         nav_pages: "Pages",
         nav_features: "Features",
         nav_team: "Our Team",
@@ -30,8 +31,9 @@ const translations = {
         nav_contact: "Contact",
         get_quote: "Get A Quote",
 
-        // Carousel
-        carousel_title: "Best Metalcraft Solutions",
+        // Gallery Section
+        gallery_title: "Our Welding Projects Gallery",
+        gallery_desc: "Explore our collection of professional welding and metal fabrication projects.",
 
         // About Section
         about_title: "Ultimate Welding and Quality Metal Solutions",
@@ -144,7 +146,7 @@ const translations = {
 
         // Topbar
         address: "ул. Плиска, Поморие, Болгария",
-        email: "info@petrovmetal.com",
+        email: "iordanpetrov90@abv.bg",
         phone: "+359 898 796 060",
 
         // Contact Page
@@ -157,6 +159,7 @@ const translations = {
         nav_home: "Главная",
         nav_about: "О нас",
         nav_services: "Услуги",
+        nav_gallery: "Галерея",
         nav_pages: "Страницы",
         nav_features: "Особенности",
         nav_team: "Наша команда",
@@ -165,6 +168,10 @@ const translations = {
         nav_404: "Страница 404",
         nav_contact: "Контакты",
         get_quote: "Получить цену",
+
+        // Gallery Section
+        gallery_title: "Галерея наших сварочных проектов",
+        gallery_desc: "Изучите нашу коллекцию профессиональных проектов сварки и металлообработки.",
 
         // Carousel
         carousel_title: "Лучшие решения для металлообработки",
@@ -293,6 +300,7 @@ const translations = {
         nav_home: "Начало",
         nav_about: "За нас",
         nav_services: "Услуги",
+        nav_gallery: "Галерия",
         nav_pages: "Страници",
         nav_features: "Характеристики",
         nav_team: "Нашият екип",
@@ -301,6 +309,10 @@ const translations = {
         nav_404: "Страница 404",
         nav_contact: "Контакти",
         get_quote: "Поискай оферта",
+
+        // Gallery Section
+        gallery_title: "Галерия на нашите заваръчни проекти",
+        gallery_desc: "Разгледайте нашата колекция от професионални проекти на заваряване и металообработка.",
 
         // Carousel
         carousel_title: "Най-добрите решения за металообработка",
@@ -373,7 +385,7 @@ const translations = {
         testimonial_3_name: "Петър Соколов",
         testimonial_3_text: "Професионален екип с години опит. Те завършиха нашия индустриален проект по-рано от срока и за наше задоволство.",
         testimonial_4_name: "Елена Димитрова",
-        testimonial_4_text: "Надеждни, честни и квалифицирани специалисти. Работил съм с тях много пъти и винаги получавам отлични резултати.",
+        testimonial_4_text: "Надеждни, честни и квалифицирани специалисти. Работила съм с тях много пъти и винаги получавам отлични резултати.",
         testimonial_5_name: "Никола Стефанов",
         testimonial_5_text: "Отлична комуникация и прозрачни цени. Те ясно обясняват процеса и доставят качествена работа без изненади.",
         testimonial_6_name: "Анна Козловска",
